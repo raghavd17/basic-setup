@@ -1,0 +1,23 @@
+.footer {
+  font-size: font-sizes(0);
+  height:$footer-height;
+  padding:$spacing;
+  background: $gray-lightest;
+}
+.footer_nav {
+  &__list {
+      @include list-inline-block;
+      text-align: center;
+    &--item {
+      @include footer-nav;
+       padding: 0px $spacing-third;
+    }
+  }
+}
+.social__list {
+    float: right;
+    @include list-inline-block;
+    &--item {
+      padding: 0px $spacing-third;
+    }
+}

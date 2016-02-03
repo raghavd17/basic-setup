@@ -1,0 +1,37 @@
+
+$footer-height : 140px;
+
+.container-fluid {
+  padding-left: $container-spacing-xs;
+  padding-right: $container-spacing-xs;
+  @include breakpoint-up(sm) {
+    padding-left: $container-spacing-sm;
+    padding-right: $container-spacing-sm;
+  }
+}
+.wrapper {
+  min-height:100%;
+  height:auto;
+  margin-bottom:-$footer-height;
+  &::after{
+    content:' ';
+    display:block;
+    height:$footer-height;
+  }
+}
+
+.main_container {
+  margin-top: -$container-spacing-xs;
+  background:$white;
+  @include breakpoint-up(sm) {
+    margin-top: -$container-spacing-sm;
+  }
+}
+.column {
+  @include box(flex column stretch);
+      // @include display(flex);
+      // @include flex-direction(column);
+      // @include justify-content(flex-start);
+      // @include align-items(stretch);
+      // @include align-content(stretch);
+}

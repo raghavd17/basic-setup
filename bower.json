@@ -1,0 +1,23 @@
+{
+  "name": "basic-setup",
+  "version": "0.0.0",
+  "homepage": "",
+  "authors": [
+    "Raghavendra Diddimani <raghavd17@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.6",
+    "normalize-scss": "~3.0.3"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.5",
+    "flexboxgrid": "~6.3.0",
+    "matchHeight": "matchheight#~0.6.0"
+  }
+}

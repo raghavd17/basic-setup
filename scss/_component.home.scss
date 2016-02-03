@@ -1,0 +1,75 @@
+.article {
+  padding: $spacing;
+  position: relative;
+  overflow: hidden;
+  @include flex(1);
+  @include breakpoint-up(sm) {
+    padding: $spacing-double;
+  }
+  &__about {
+    background: brand-color(blue);
+    color: brand-color(white);
+    h1,
+    h2,
+    h3,
+    p {
+      color: brand-color(white);
+    }
+    & a {
+      color: brand-color(white);
+      &:hover {
+
+      }
+    }
+  }
+  &__primary {
+    & img {
+       @include center-block();
+       max-width: 100%;
+    }
+  }
+  // &__about, &__work{
+  //   height: 50vh;
+  // }
+  &__what-we-do {
+    background: brand-color(yellow);
+  }
+  &__query {
+    background: brand-color(blue);
+  }
+  &__know-our-story {
+    text-align: center;
+    & h2 {
+      @include reset-margin(all);
+      font-size: font-size(3);
+      text-transform: uppercase;
+      color: brand-color(primary);
+    }
+  }
+  &__disc {
+     @include position(absolute, 0 0 0 0);
+    background:rgba(0,0,0,0.9);
+    color: $white;
+    text-align: center;
+    @include display(flex);
+    @include justify-content(center);
+    @include align-items(center);
+    @include transform(translateY(100%));
+    @include transform-origin(center top);
+    @include transform-style(preserve-3d);
+    @include transition(all 1s ease-in-out);
+    &-container {
+      // @include flex(1);
+      padding: $spacing;
+      h2, h4, p {
+        color: $white;
+      }
+    }
+  }
+  &:hover .article__disc {
+      @include transform(translateY(0%));
+    }
+
+  // article:hover
+
+}
