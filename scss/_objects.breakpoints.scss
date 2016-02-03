@@ -1,12 +1,12 @@
 $xs-min  : 0em;
-$xs-max: 33.9em;
-$sm-min: 34em;
-$sm-max: 47.9em;
-$md-min: 48em;
-$md-max: 61.9em;
-$lg-min: 62em;
-$lg-max: 74.9em;
-$xl-min: 75em;
+$xs-max: 33.9em; // 542.4px
+$sm-min: 34em; // 544px
+$sm-max: 47.9em; //766.4px
+$md-min: 48em; //768px
+$md-max: 61.9em; //990.4px
+$lg-min: 62em; //992px
+$lg-max: 74.9em; //1198.4px
+$xl-min: 75em; //1200px
 
 @mixin breakpoint-up($point) {
   @if $point == sm {
