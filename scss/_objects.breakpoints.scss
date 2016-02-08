@@ -38,3 +38,16 @@ $xl-min: 75em; //1200px
     @media (max-width: $lg-max) { @content; }
   }
 }
+
+// min - max breakpoint
+@mixin breakpoint($min, $max) {
+  @if $min == xs and $max == sm {
+    @media (min-width: $xs-min) and (max-width: $xs-max){ @content; }
+  }
+  @if $min == sm and $max == md {
+    @media (min-width: $sm-min) and (max-width: $md-max){ @content; }
+  }
+  @if $min == md and $max == lg {
+    @media (min-width: $md-min) and (max-width: $lg-max){ @content; }
+  }
+}
