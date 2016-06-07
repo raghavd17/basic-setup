@@ -1,7 +1,7 @@
 /* ==========================================================================* /
 /*
- * Tools: Default mixins and functions
  * Settings: Global variables, config switches
+ * Tools: Default mixins and functions
  * Generic: Ground-zero styles (Normalize, resets, box-sizing)
  * Base: Unclassed HTML elements (type selectors)
  * Vendor: Vendor specific files
@@ -12,9 +12,8 @@
  / *************************************************************************** /
 /* ===========================================================================*/
 
-
-@import 'tools.core';
 @import 'settings.core';
+@import 'tools.core';
 @import 'generic.core';
 @import 'base.core';
 // @import 'vendor.core';
